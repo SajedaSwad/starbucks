@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logoPage">
+        <a class="logo" href="#"><img src="../Starbucks-logo.png" alt="" /></a>
+      </div>
+      <div class="navPage">
+        <nav>
+          <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Reward</a></li>
+            <li><a href="#">Gift</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="right-options">
+        <span>Find a store</span>
+        <button>Sign In</button>
+        <button>Join Now</button>
+      </div>
+      <!-- Include jQuery library -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </header>
+    <div class="first">
+      <span>STARBUCKS® REWARDS</span>
+    </div>
+    <div class="second">
+      <div class="second-intro">
+        <h1>FREE COFFEE IS A TAP AWAY</h1>
+        <h3>Join now to start earning Rewards</h3>
+        <br />
+        <button>Join now</button><br />
+        <!-- <h4>Or join in the app for the best expereince</h4> -->
+        <!-- starbucks is suport the israel ocuppation so 
+          my brother wife shahd tell me that i must not work this site and she is right  -->
+      </div>
+      <img src="../star.webp" alt="" />
+    </div>
+    <div class="third">
+      <div class="title">
+        <h1>Getting starting is easy</h1>
+        <span>Earn Stars and get rewarded in a few easy steps.</span>
+      </div>
+      <div class="componant">
+        <div>
+          <button>1</button>
+          <h2>Create an account</h2>
+          <p>To get started, join now. You can also join in the app to get access to the full range of Starbucks® Rewardbenefits  all </p>
+        </div>
+        <div><button>2</button>
+          <h2>Order and pay how you’d like</h2>
+          <p>Use cash, credit/debit card or save some time and pay right through the app.</p></div>
+        <div><button>3</button>
+          <h2>Earn Stars, get Rewards</h2>
+          <p>As you earn Stars, you can redeem them for Rewards—like free food, </p></div>
+      </div>
+    </div>
+    <div class="fourth">
+     <div><h1>Get your favorites for free</h1></div>
+     <div class="star"> 25✨ 100✨ 200✨ 300✨ 400✨</div>
+     <div class="content">
+      <div >
+        <img src="../coffee startbucks.jpg" alt="">
+        <div>
+          <h2>Customize your drink
+          </h2>
+          <span>Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</span>
+        </div>
+      </div>
+     </div>
+    </div>
+  </div>
+
+    <footer>
+      <p>&copy; 2023 Your App</p>
+    </footer>
+    <script>
+      $(document).ready(function () {
+        $("nav ul li a").hover(
+          function () {
+            $(this).parent().addClass("hovered"); // Add a class to the parent li on hover
+          },
+          function () {
+            $(this).parent().removeClass("hovered"); // Remove the class when not hovered
+          }
+        );
+      });
+      $(document).ready(function () {
+        var component = $(".first");
+        var componentOffset = component.offset().top;
+
+        $(window).scroll(function () {
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop > componentOffset) {
+            component.addClass("fixed");
+          } else {
+            component.removeClass("fixed");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  /* justify-content: center;
+  align-items: center; */
+}
+header {
+  width: 100%;
+  top: 0;
+  right: 0;
+  /* z-index: 1000; */
+  display: flex;
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  flex-direction: row;
+  justify-content: space-around;
+  background: #ffff;
+  box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+  /* padding: 15px 10%; */
+  /* transition: 0.2s; */
+}
+.logoPage {
+  display: flex;
+  flex-direction: row;
+  /* background-color: aqua; */
+  width: 10%;
+}
+.logo {
+  img {
+    justify-content: flex-start;
+    /* width:10px; */
+    width: 100px;
+    margin: 5px;
+    align-items: center;
+  }
+}
+.navPage {
+  width: 60%;
+  padding: 0 0;
+  align-items: center;
+  /* background-color: aquamarine; */
+  nav ul {
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+    list-style: armenian;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  nav ul li {
+    display: flex;
+    /* background-color: #9fc300; */
+    /* display: inline;   */
+    align-items: center;
+    margin-right: 20px;
+    height: 70px;
+  }
+
+  nav ul li a {
+    text-transform: uppercase;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    color: inherit;
+    font-weight: bolder;
+    font-size: small;
+    margin: 5px;
+    /* border-bottom: 1px solid transparent; Add a transparent bottom border */
+  }
+  .hovered {
+    border-bottom: 5px solid rgb(1, 47, 15); /* Add a transparent bottom border */
+  }
+}
+
+.right-options {
+  display: flex;
+  font-size: medium;
+  font-weight: bolder;
+  justify-content: space-between;
+  width: 25%;
+  align-items: center;
+  /* background-color: #9fc300; */
+}
+.right-options button {
+  display: flex;
+  font-weight: bolder;
+  /* background-color: #ff0000; */
+  justify-content: end;
+  text-decoration: none;
+  margin: 3px;
+  border: 1px solid black;
+  border-radius: 20px; /* This will make the top corners rounded */
+  cursor: pointer;
+  padding: 6px 15px;
+}
+.right-options button:nth-child(3) {
+  background-color: black;
+  color: beige;
+}
+.right-options button:nth-child(2):hover {
+  background-color: rgb(173, 172, 172);
+}
+.right-options button:nth-child(3):hover {
+  background-color: rgb(81, 79, 79);
+}
+
+.first {
+  position: relative; /* Initially positioned relative to its parent */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #1e3932;
+}
+.first.fixed {
+  position: fixed; /* Position becomes fixed when scrolled */
+  top: 0px; /* Adjust top value for fixed position */
+  z-index: 999; /* Ensure it's above other content */
+}
+.first span {
+  margin-left: 180px;
+  color: white;
+  font-weight: bolder;
+  /* background-color: rgb(212, 233, 226); */
+  /* background-image: url("/weblx/images/rewards/hero/xl-hero-desktop_2021.png"); */
+}
+.second {
+ display:  flex!important;
+ position: relative;
+ /* justify-content: flex-start; */
+  /* margin: 4px; */
+  background-color: #d4e9e2;
+  /* width: 100%; */
+  height: 464px;
+}
+.second-intro {
+  /* background-color: #1de6b1; */
+  height:fit-content;
+  width: max-content;
+  margin-left: 200px;
+  width: 200px;
+  padding: 50px;
+}
+.second-intro->h1{
+  font-size: larger;
+}
+.second-intro button{
+  display: flex;
+  font-weight: bolder;
+  background-color:#00754a;
+  justify-content: end;
+  text-decoration: none;
+  margin: 3px;
+  border:none;
+  border-radius: 20px; /* This will make the top corners rounded */
+  cursor: pointer;
+  padding: 6px 15px;
+}
+.second img{
+  /* margin-right: 200px; */
+  width:1400px;
+  position: absolute;
+  left: 12px;
+  /* top: px; */
+}
+.third{
+  display: flex;
+  flex-direction: column;
+  /* background-color: rgb(21, 118, 203); */
+  align-items: center;
+  justify-content: center;
+}
+.third h1{
+ align-self: center;
+}
+
+.third .componant{
+
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 12px;
+margin:12px
+}
+.third .componant div{
+  display: flex;
+    
+  margin: 10px;
+ padding:15px;
+  flex-direction:column;
+  color: black;
+  width: 200px;
+  height: 240px;
+  /* background-color: #00754a; */
+}
+.third .componant div button{
+ border: 1.5px solid #00754a;
+ border-radius: 50%;
+ width: 60px;
+ height: 60px;
+font-weight: bold;
+font-size: larger;
+ color: #00754a;
+ background-color: white;
+}
+.fourth{
+  background-color: #f1f8f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fourth->div{
+margin-top: 40px;
+}
+.fourth .star{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.fourth .content {
+  background-color: #d4e9e2;
+  width: 100%;
+  align-items: center;
+
+}
+.fourth .content div{
+  display: flex;
+  flex-direction: row;
+}
